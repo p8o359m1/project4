@@ -1,8 +1,10 @@
 @import'variables';
 @import'config';
 @import'mobile';
+@import'desktop';
 
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Lexend+Deca&family=Open+Sans:ital@0;1&display=swap');
 
-body {
-    background-color: red;
+* {
+    font-family: 'Hanken Grotesk';
 }

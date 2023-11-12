@@ -1,54 +1,133 @@
 @media only screen and (max-width: 375px) {
+  body {
+    background-color: $Dark--gray-blue;
+
     .container {
-        width: 330px;
-        min-height: 100vh;
-        margin: 0 auto;
-        background-color: $white;
+      width: 330px;
+      min-height: 100vh;
+      margin: 0 auto;
+      background-color: $White;
 
-        .cardUp {
-            width: 100%;
-            height: 310px;
-            border-bottom-left-radius: 30px;
-            border-bottom-right-radius: 30px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            
+      .cardUp {
+        width: 100%;
+        height: 310px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient($Light--slate-blue 0%, $Light--royal-blue);
 
-
-            &__title {
-                margin-top: -30px;
-                font-size: 16px;
-                color: red;
-            }
-
-            .circle {
-                border: 1px solid;
-                border-radius: 50%;
-                width: 110px;
-                height: 110px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                margin-top: 20px;
-            }
+        &__title {
+          margin-top: -50px;
+          font-size: 16px;
+          color: $Light-lavender;
         }
 
-        .cardDown {
-            
+        .circle {
+          border-radius: 50%;
+          width: 120px;
+          height: 120px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          margin-top: 15px;
+          background: linear-gradient($Violet--blue-circle, $Persian--blue-circle);
 
-            &__title {
-                padding: 20px;
-            }
+          &__title {
+            color: $White;
+            font-size: 48px;
+            margin-top: 15px;
+          }
 
-            .row {
-                display: flex;
-                justify-content: space-evenly;
-                background: $White;
-            }
-            
+          &__text {
+            color: hsl(240, 12%, 56%);
+            font-size: 14px;
+            position: relative;
+            top: -10px;
+          }
         }
+
+        &__subTitle {
+            color: $White;
+            font-size: 20px;
+            position: relative;
+            top: 20px;
+        }
+
+        &__subText {
+            color: $Light-lavender;
+            font-size: 14px;
+            padding: 0 50px;
+            position: relative;
+            top: 30px;
+        }
+      }
+
+      .cardDown {
+        &__title {
+          padding: 25px;
+          font-size: 16px;
+          color: $Dark--gray-blue;
+          margin-left: 5px;
+        }
+
+        .row {
+          display: flex;
+          justify-content: space-evenly;
+          padding: 10px 0px;
+          width: 275px;  
+          margin: 0 auto;
+          border-radius: 5px; 
+          margin-bottom: 20px;               
+
+          .image {
+            transform: scale(90%);
+            position: relative;
+            right: 20px;
+          }
+
+          .rowText {
+            position: relative;
+            right: 40px;
+            font-size: 14px;
+          }
+
+          .num {
+            font-size: 14px;
+          }
+        }
+
+        .row__one {
+            background-color: hsla(0, 100%, 67%, 0.05);
+
+        }
+
+        .row__two {
+            background-color: hsla(39, 100%, 56%, 0.05);
+        }
+
+        .row__three {
+            background-color: hsla(166, 100%, 37%, 0.05);
+        }
+
+        .row__four {
+            background-color: hsl(234, 85%, 45%, 0.05);
+        }
+
+        .submit {
+            width: 275px;
+            padding: 13px 0;
+            position: relative;
+            left: 27px;
+            border-radius: 20px;
+            border: none;
+            color: white;
+            background-color: $Dark--gray-blue;
+        }
+      }
     }
   }
+}

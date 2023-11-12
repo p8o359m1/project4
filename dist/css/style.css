@@ -4,6 +4,7 @@
 /*
   1. Use a more-intuitive box-sizing model.
 */
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Lexend+Deca&family=Open+Sans:ital@0;1&display=swap");
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -20,12 +21,12 @@
   Typographic tweaks!
   3. Add accessible line-height
   4. Improve text rendering
-*/
+
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
-
+ */
 /*
   5. Improve media defaults
 */
@@ -62,16 +63,19 @@ body {
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
-  }
+}
 
 @media only screen and (max-width: 375px) {
-  .container {
+  body {
+    background-color: hsl(224, 30%, 27%);
+  }
+  body .container {
     width: 330px;
     min-height: 100vh;
     margin: 0 auto;
-    background-color: white;
+    background-color: hsl(0, 0%, 100%);
   }
-  .container .cardUp {
+  body .container .cardUp {
     width: 100%;
     height: 310px;
     border-bottom-left-radius: 30px;
@@ -80,30 +84,119 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(deg45, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    background: linear-gradient(hsl(252, 100%, 67%) 0%, hsl(241, 81%, 54%));
   }
-  .container .cardUp__title {
-    margin-top: -30px;
+  body .container .cardUp__title {
+    margin-top: -50px;
     font-size: 16px;
-    color: White;
+    color: hsl(241, 100%, 89%);
   }
-  .container .cardUp .circle {
-    border: 1px solid;
+  body .container .cardUp .circle {
     border-radius: 50%;
-    width: 110px;
-    height: 110px;
+    width: 120px;
+    height: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 15px;
+    background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
   }
-  .container .cardDown__title {
-    padding: 20px;
+  body .container .cardUp .circle__title {
+    color: hsl(0, 0%, 100%);
+    font-size: 48px;
+    margin-top: 15px;
   }
-  .container .cardDown .row {
+  body .container .cardUp .circle__text {
+    color: hsl(240, 12%, 56%);
+    font-size: 14px;
+    position: relative;
+    top: -10px;
+  }
+  body .container .cardUp__subTitle {
+    color: hsl(0, 0%, 100%);
+    font-size: 20px;
+    position: relative;
+    top: 20px;
+  }
+  body .container .cardUp__subText {
+    color: hsl(241, 100%, 89%);
+    font-size: 14px;
+    padding: 0 50px;
+    position: relative;
+    top: 30px;
+  }
+  body .container .cardDown__title {
+    padding: 25px;
+    font-size: 16px;
+    color: hsl(224, 30%, 27%);
+    margin-left: 5px;
+  }
+  body .container .cardDown .row {
     display: flex;
     justify-content: space-evenly;
-    background: hsl(0, 0%, 100%);
+    padding: 10px 0px;
+    width: 275px;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
   }
+  body .container .cardDown .row .image {
+    transform: scale(90%);
+    position: relative;
+    right: 20px;
+  }
+  body .container .cardDown .row .rowText {
+    position: relative;
+    right: 40px;
+    font-size: 14px;
+  }
+  body .container .cardDown .row .num {
+    font-size: 14px;
+  }
+  body .container .cardDown .row__one {
+    background-color: hsla(0, 100%, 67%, 0.05);
+  }
+  body .container .cardDown .row__two {
+    background-color: hsla(39, 100%, 56%, 0.05);
+  }
+  body .container .cardDown .row__three {
+    background-color: hsla(166, 100%, 37%, 0.05);
+  }
+  body .container .cardDown .row__four {
+    background-color: hsla(234, 85%, 45%, 0.05);
+  }
+  body .container .cardDown .submit {
+    width: 275px;
+    padding: 13px 0;
+    position: relative;
+    left: 27px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: hsl(224, 30%, 27%);
+  }
+}
+@media only screen and (min-width: 375px) {
+  body {
+    height: 100vh;
+    background-color: red;
+  }
+  body .container {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    background-color: green;
+  }
+  body .container .cardUp {
+    background-color: yellow;
+  }
+}
+* {
+  font-family: "Hanken Grotesk";
 }/*# sourceMappingURL=style.css.map */
