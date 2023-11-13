@@ -1,6 +1,6 @@
 @media only screen and (max-width: 375px) {
   body {
-    background-color: $Dark--gray-blue;
+    background-color: blue;
 
     .container {
       width: 330px;
@@ -97,24 +97,34 @@
 
           .num {
             font-size: 14px;
+            color: black;
+
+            .cent {
+              color: hsl(226, 15%, 67%);
+            }
           }
+
         }
 
         .row__one {
             background-color: hsla(0, 100%, 67%, 0.05);
+            color: $Light-red;
 
         }
 
         .row__two {
             background-color: hsla(39, 100%, 56%, 0.05);
+            color: $Orangey-yellow;
         }
 
         .row__three {
             background-color: hsla(166, 100%, 37%, 0.05);
+            color: $Green-teal;
         }
 
         .row__four {
             background-color: hsl(234, 85%, 45%, 0.05);
+            color: $Cobalt-blue;
         }
 
         .submit {

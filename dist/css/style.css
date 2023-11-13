@@ -67,7 +67,7 @@ body {
 
 @media only screen and (max-width: 375px) {
   body {
-    background-color: hsl(224, 30%, 27%);
+    background-color: blue;
   }
   body .container {
     width: 330px;
@@ -153,18 +153,26 @@ body {
   }
   body .container .cardDown .row .num {
     font-size: 14px;
+    color: black;
+  }
+  body .container .cardDown .row .num .cent {
+    color: hsl(226, 15%, 67%);
   }
   body .container .cardDown .row__one {
     background-color: hsla(0, 100%, 67%, 0.05);
+    color: hsl(0, 100%, 67%);
   }
   body .container .cardDown .row__two {
     background-color: hsla(39, 100%, 56%, 0.05);
+    color: hsl(39, 100%, 56%);
   }
   body .container .cardDown .row__three {
     background-color: hsla(166, 100%, 37%, 0.05);
+    color: hsl(166, 100%, 37%);
   }
   body .container .cardDown .row__four {
     background-color: hsla(234, 85%, 45%, 0.05);
+    color: hsl(234, 85%, 45%);
   }
   body .container .cardDown .submit {
     width: 275px;
@@ -180,21 +188,141 @@ body {
 @media only screen and (min-width: 375px) {
   body {
     height: 100vh;
-    background-color: red;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   body .container {
     display: flex;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 400px;
-    height: 400px;
-    margin-top: -200px;
-    margin-left: -200px;
-    background-color: green;
   }
   body .container .cardUp {
-    background-color: yellow;
+    background: linear-gradient(hsl(252, 100%, 67%) 0%, hsl(241, 81%, 54%));
+    border-radius: 20px;
+    height: 340px;
+    width: 245px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.1);
+  }
+  body .container .cardUp__title {
+    margin-top: 25px;
+    font-size: 16px;
+    color: hsl(241, 100%, 89%);
+  }
+  body .container .cardUp .circle {
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18px;
+    background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  }
+  body .container .cardUp .circle__title {
+    color: hsl(0, 0%, 100%);
+    font-size: 48px;
+    margin-top: 15px;
+  }
+  body .container .cardUp .circle__text {
+    color: hsl(240, 12%, 56%);
+    font-size: 12px;
+    position: relative;
+    top: -10px;
+  }
+  body .container .cardUp__subTitle {
+    color: hsl(0, 0%, 100%);
+    font-size: 20px;
+    position: relative;
+    top: 20px;
+  }
+  body .container .cardUp__subText {
+    color: hsl(241, 100%, 89%);
+    font-size: 12px;
+    padding: 0 50px;
+    position: relative;
+    top: 30px;
+    width: 270px;
+    text-align: center;
+  }
+  body .cardDown {
+    position: relative;
+    height: 340px;
+    width: 280px;
+    z-index: -1;
+    border-radius: 20px;
+    top: 0;
+    right: 47px;
+    box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.1);
+  }
+  body .cardDown__title {
+    padding: 25px;
+    font-size: 15px;
+    color: hsl(224, 30%, 27%);
+    margin-left: 38px;
+  }
+  body .cardDown .row {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 8px 0px;
+    width: 190px;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    margin-left: 58px;
+  }
+  body .cardDown .row .image {
+    transform: scale(70%);
+    position: relative;
+    right: 20px;
+    padding: 0 20px;
+  }
+  body .cardDown .row .rowText {
+    position: relative;
+    right: 40px;
+    font-size: 12px;
+  }
+  body .cardDown .row .num {
+    font-size: 12px;
+    color: black;
+  }
+  body .cardDown .row .num .cent {
+    color: hsl(226, 15%, 67%);
+  }
+  body .cardDown .row__one {
+    background-color: hsla(0, 100%, 67%, 0.05);
+    margin-top: -10px;
+    color: hsl(0, 100%, 67%);
+  }
+  body .cardDown .row__two {
+    background-color: hsla(39, 100%, 56%, 0.05);
+    color: hsl(39, 100%, 56%);
+  }
+  body .cardDown .row__three {
+    background-color: hsla(166, 100%, 37%, 0.05);
+    color: hsl(166, 100%, 37%);
+  }
+  body .cardDown .row__four {
+    background-color: hsla(234, 85%, 45%, 0.05);
+    color: hsl(234, 85%, 45%);
+  }
+  body .cardDown button {
+    width: 190px;
+    padding: 8px 0;
+    position: relative;
+    left: 58px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: hsl(224, 30%, 27%);
+    font-size: 14px;
+    top: 20px;
+  }
+  body .cardDown button:hover {
+    cursor: pointer;
   }
 }
 * {
